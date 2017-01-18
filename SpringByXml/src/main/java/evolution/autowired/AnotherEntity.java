@@ -1,4 +1,4 @@
-package architect.springTest;
+package evolution.autowired;
 
 import org.springframework.stereotype.Repository;
 
@@ -6,6 +6,6 @@ import lombok.Data;
 
 @Data
 @Repository
-public class AnyEntity {
+public class AnotherEntity {
 	private String name;
 }

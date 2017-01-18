@@ -1,4 +1,4 @@
-package architect.autowired;
+package evolution.autowired;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -16,12 +16,21 @@ public class AnyService {
 	AnyEntity anyEntity;// Declare the bean in applicationContext.xml before autowiring it.
 
 	@Autowired
+	AnotherEntity anotherEntity;// Tag anotherEntity with @Repository before autowiring it.
+	
+	@Autowired
 	ObjectMapper objectMapper;// Third party bean can also be autowired, as long as you declare the bean in applicationContext.xml.
 	
 	@Test
 	public void anyEntity() {
 		anyEntity.setName("anyName");
 		System.out.println(anyEntity);
+	}
+	
+	@Test
+	public void anotherEntity() {
+		anotherEntity.setName("anyName");
+		System.out.println(anotherEntity);
 	}
 	
 	@Test

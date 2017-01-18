@@ -1,4 +1,4 @@
-package architect.autowired;
+package evolution.autowired;
 
 import lombok.Data;
 
